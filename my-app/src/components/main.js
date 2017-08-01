@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+import PropTypes from 'prop-types'
 
-const Main = () => {
 
-  return(
-    <div>
-      <p>Test123</p>
-    </div>
+class Main extends Component{
+  constructor(props){
+    super(props) {
 
-  )
+    }
+
+    
+  }
+
+
+
+
 
 
 }
+
+
 
 export default Main

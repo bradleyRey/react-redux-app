@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/App.css';
 import registerServiceWorker from './registerServiceWorker';
@@ -11,3 +11,38 @@ ReactDOM.render(
   </BrowserRouter>
   , document.getElementById('root'));
 registerServiceWorker();
+
+/////
+
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import Reducer from './reducers/reducer'
+import App from './App'
+
+let store = createStore(Reducer)
+
+render(
+  <App
+  store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
+*/
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createStore } from 'redux'
+import App from './App'
+import Reducer from './reducers/reducer'
+
+const store = createStore(Reducer)
+
+const render = () => ReactDOM.render(
+  <App/>,
+  document.getElementById('root')
+)
+
+render()
+store.subscribe(render)

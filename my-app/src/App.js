@@ -7,21 +7,7 @@ import { BrowserRouter, Switch, Route, Router, withRouter, Redirect} from 'react
 import { Provider } from 'react-redux'
 import PropTypes from 'prop-types'
 
-const App = () => (
-  <div className='App'>
-    <Routes />
-  </div>
-)
-
-const Routes = ({ store }) => (
-  <Provider store={store}>
-    <Router>
-      <Route path="/" component={AppTest} />
-    </Router> 
-  </Provider>
-)
-
-class AppTest extends Component {
+class App extends Component {
   render() {
     return (
       <div className="App">

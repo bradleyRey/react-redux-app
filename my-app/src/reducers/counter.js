@@ -11,9 +11,7 @@ const Counter =  (state = 0, action) => {
       break;
     default:
       return state
-
   }
-
 }
 
 export default Counter

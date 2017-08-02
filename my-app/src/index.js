@@ -40,9 +40,15 @@ import Reducer from './reducers/reducer'
 const store = createStore(Reducer)
 
 const render = () => ReactDOM.render(
-  <App/>,
+  <App
+  value={store.getState()}
+  increment={() => store.dispatch({type: 'INC'})}
+  decrement={() => store.dispatch({type: 'DEC'})}
+
+  />,
   document.getElementById('root')
 )
 
-render()
+console.log(store.getState())
 store.subscribe(render)
+render()

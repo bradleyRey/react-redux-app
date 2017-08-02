@@ -27,3 +27,34 @@ body {
 
 .title {
   padding: 50px; }
+
+.counterWrapper {
+  border: solid black 2px;
+  width: 100px;
+  border-radius: 40px;
+  padding: 50px;
+  margin: 0 auto; }
+
+.INC {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+
+.DEC {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }

@@ -5,7 +5,6 @@ import redux from 'redux';
 export const increment = counter => {
 
   return {
-    id
     type: 'INC',
     counter
   }

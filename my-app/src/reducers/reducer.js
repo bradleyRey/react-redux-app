@@ -5,7 +5,6 @@ import Counter from './counter'
 
 const Reducer = combineReducers({
   Counter
-
 })
 
 export default Reducer
